@@ -1,0 +1,27 @@
+.main-nav {
+    background-color: $rouge;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    a {
+        color:#fff;
+    }
+    .container  {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.nav {
+    a:not(:last-child) {
+        margin-right: 33px;
+        padding-right: 33px;
+        border-right: 1px solid #fff;
+    }
+}
+
+
+.icons {
+    word-spacing: 25px;
+}
