@@ -24,4 +24,13 @@
 
 .icons {
     word-spacing: 25px;
+    a i {
+        transition: .4s all ease-in-out;
+        font-size: 17px;
+    }
+    a i:hover {
+        transform: rotateY(180deg);
+        transition: .4s all ease-in-out;
+     }
 }
+

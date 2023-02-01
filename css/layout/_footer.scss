@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    gap:70px;
+    justify-content: space-between;
+
+    > * {
+        width:33%;
+    }
+}
+
+.post {
+    display: flex;
+    gap:20px;
+    align-items: flex-end;
+}

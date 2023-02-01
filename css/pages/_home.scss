@@ -1,5 +1,11 @@
+main {
+    background-color: #f4f4f4;
+}
+
+// partie une
+
 .headline {
-    margin : 20px 0;
+    padding : 20px 0;
     display: flex;
     gap:20px;
 
@@ -11,15 +17,15 @@
         
     }
 
-    .principal {
-        position:relative
+    .principal, .top, .bottom {
+        position:relative;
     }
 
     img {
         border-radius:10px;
     }
 
-     .principal::before {
+     .principal::before, .top::before, .bottom::before {
         content: "";
         background: linear-gradient(0deg, rgba(9,121,82,0.3337710084033614) 0%, rgba(0,0,0,1) 0%, rgba(210,1,103,0) 100%, rgba(244,1,120,0.13489145658263302) 100%, rgba(255,255,255,0) 100%);
         height:50%;
@@ -30,3 +36,97 @@
         border-radius: 10px;
     }
 }
+
+.headline .text {
+    position: absolute;
+    top:70%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .headline-title {
+        font-family: 'Barlow';
+        font-size: 40px;
+        font-weight: 800;
+         a {
+            color: #fff;
+            transition: .4s all ease-in-out;
+        }
+        a:hover {
+            color:$rouge;
+        }       
+    }
+    .details {
+        color: #c2c2c2;
+        font-size: 12px;
+    }
+
+    .sticker {
+        padding: 7px 14px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 10px;
+        color: #fff;
+        background-color: $rouge;
+    }
+}
+
+.top .text {
+    top : 60%;
+}
+
+.bottom .text {
+    top : 30%;
+}
+
+.top .text .headline-title, .bottom .text .headline-title {
+        font-size: 24px;
+}
+
+.top .text .sticker {
+    background-color: $bleu;
+} 
+
+.bottom .text .sticker {
+    background-color: $vert;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(228, 228, 228, 0.774);
+    border: none;
+}
+
+// partie deux
+
+.articles-list {
+    margin-top:50px;
+}
+
+.whatsnew {
+    width:65%;
+}
+
+.pub {
+    margin-top:20px;
+}
+
+.white-bg {
+    background-color: #fff;
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.articles-flex {
+    display: flex;
+}
+.article-col {
+    display: flex;
+}
+
+
+
+
