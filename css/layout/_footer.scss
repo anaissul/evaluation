@@ -1,15 +1,61 @@
+.footer {
+    background-color: #000;
+}
+
 footer {
     display: flex;
-    gap:70px;
+    gap:120px;
     justify-content: space-between;
+    padding-top:150px;
+    padding-bottom: 150px;
+    color:$gris;
+    align-items: flex-start;
 
-    > * {
-        width:33%;
+    .news, .pub {
+        width:30%;
+        color: #9fa6bd;
+        font-size: 14px;
+        line-height: 1.8rem;
+    }
+
+    .popular-post {
+        width:40%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+        align-items: flex-start;
+        h3 {
+            margin-bottom:10px;
+            margin-top:0;
+            color:#fff;
+            font-size: 22px;
+        }
+        a {
+            color: #fff;
+            line-height: 1.3rem;
+            font-size: 15px;
+            transition: .4s all ease-in-out;
+        }
+
+        a:hover {
+            color:$rouge;
+        }
+        .details {
+            color: #707b8e;
+            font-size: 12px; 
+            line-height:2rem;
+        }
     }
 }
 
 .post {
     display: flex;
     gap:20px;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        margin:0;
+    }
+
 }
