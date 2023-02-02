@@ -63,15 +63,18 @@ main {
         font-size: 12px;
     }
 
-    .sticker {
-        padding: 7px 14px;
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 10px;
-        color: #fff;
-        background-color: $rouge;
-    }
+}
+
+
+.sticker {
+    padding: 7px 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: $rouge;
 }
 
 .top .text {
@@ -104,10 +107,25 @@ hr {
 
 .articles-list {
     margin-top:50px;
+    display: flex;
+    gap:20px;
+
+    .sticker-b {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 11px;
+        display: inline-block;
+        color: $bleu;
+        line-height: 2rem;
+    }
 }
 
 .whatsnew {
-    width:65%;
+    max-width:100%;
+    h2 {
+        font-size: 40px;
+        margin:0;
+    }
 }
 
 .pub {
@@ -122,9 +140,111 @@ hr {
 
 .articles-flex {
     display: flex;
+    gap:30px;
+    .details {
+        color: #c2c2c2;
+        font-size: 12px;
+        line-height: 2rem;
+    }
 }
 .article-col {
     display: flex;
+   gap: 10px;
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin :0;
+        font-family: "Barlow",sans-serif;
+        color: #051441;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.flex-left {
+    width:770px;
+}
+
+.flex-right {
+    width :calc(100% - 770px);
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right:15px;
+        a {
+            color: #051441;
+        }
+        .red {
+            color : $rouge
+        }
+    }
+}
+
+.princi {
+    margin-top:30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    img {
+        width: 320px;
+    }
+    .headline-title {
+        font-family: "Barlow",sans-serif;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 10px 0;
+        a {
+            color: #051441;
+        }
+    }
+    p {
+        font-size: 16px;
+        line-height: 2rem;
+        margin-top:5px;
+        max-width:320px;
+    }
+}
+
+.secondaires {
+    margin-top:30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+// partie trois
+
+.most-popular {
+    padding-top: 100px;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    .pub {
+        width: 265px;
+        margin:0;
+        img {
+            display: block;
+        }
+    }
+    .slider {
+        width: calc(100% - 265px);
+        height: 355px;
+    }
 }
 
 
