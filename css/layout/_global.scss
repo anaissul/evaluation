@@ -11,3 +11,16 @@ a {
     width:1150px;
     margin: 0 auto;
 }
+
+@media screen and (max-width:945px)  {
+    .container {
+        width:80%;
+    }
+}
+
+@media screen and (max-width:545px){
+    .container {
+        width: 90%;
+    }
+}
+

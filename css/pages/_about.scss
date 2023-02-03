@@ -170,3 +170,44 @@ h2 {
 
 
 }
+
+@media screen and (max-width:945px) {
+    .services {
+        background: url(../img/gallery/section_bg02.jpg) left/cover;
+        height:150vh;
+    }
+
+    
+    .services .container {
+        display: block;
+        img {
+            min-width:100%
+        }
+        h3 {
+            color:#fff;
+        }
+        h3::before {
+            background-color:#fff;
+        }
+        .btn {
+            background-color: black;
+        }
+    }
+
+}
+
+@media screen and (max-width:545px) {
+    .mission {
+        width:90%;
+    }
+
+    .services {
+        img {width:90%}
+    }
+
+    .staff {
+        display: block;
+    }
+
+    .staff .ethan {width: 100%;}
+}

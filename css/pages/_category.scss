@@ -40,3 +40,28 @@
         transform: scale(1.1);
     }
 }
+
+@media screen and (max-width:945px) {
+    .category .cat-flex {
+        display: block;
+    }
+
+    .category .pub {
+        display:none
+    }
+
+    .category .sidebar {
+        width: 100%;
+        margin-top:20px;
+    }
+
+}
+
+@media screen and (max-width:545px) {
+    .category .article-row {
+        display: block;
+    }
+    .category .princi {
+        width: 100%;
+    }
+}

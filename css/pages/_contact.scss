@@ -49,6 +49,25 @@ form {
         font-size: 13px;
     }
 
+    [type="submit"] {
+        border:1px solid $rouge;
+        color:$rouge;
+        background-color: #f8f8f8;
+        width:20%;
+        padding:20px;
+        text-transform: uppercase;
+        font-family: "Barlow",sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: .3s all ease-in-out;
+        cursor: pointer;
+      }
+
+      [type="submit"]:hover {
+        background-color: $rouge;
+        color:white;
+      }
+
     
 }
 
@@ -77,4 +96,17 @@ form {
 .icon i {
     font-size: 28px;
     color: gray;
+}
+
+@media screen and (max-width:945px) {
+    iframe {width:80%}
+    .contact .col {display: block;}
+    .contact .info {width: 100%; margin-top:50px;}
+    textarea, input {max-width:80%}
+    .half {max-width:80%}
+}
+
+@media screen and (max-width:545px) {
+    textarea, input {max-width:60%}
+    .half {max-width:60%}
 }

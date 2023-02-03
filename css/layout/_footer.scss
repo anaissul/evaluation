@@ -59,3 +59,20 @@ footer {
     }
 
 }
+
+@media screen and (max-width:945px) {
+    footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:545px) {
+    footer {
+        display: block;
+        .news, .pub, .popular-post {
+            width:100%;
+            margin-bottom:20px;
+        }
+        .pub img {min-width: 100%;}
+    }
+}
