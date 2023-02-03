@@ -107,6 +107,15 @@ form {
 }
 
 @media screen and (max-width:545px) {
-    textarea, input {max-width:60%}
-    .half {max-width:60%}
+    textarea, input {max-width:55%}
+    form .half{
+        display: block;
+        max-width: 100%;
+        input {
+            width: 55%;
+        }
+        input:first-child {
+            margin-bottom:30px;
+        }
+    }
 }
