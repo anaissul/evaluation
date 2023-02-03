@@ -46,23 +46,23 @@ main {
     gap:20px;
     justify-content: flex-start;
     align-items: flex-start;
-    .headline-title {
-        font-family: 'Barlow';
-        font-size: 40px;
-        font-weight: 800;
-         a {
-            color: #fff;
-            transition: .4s all ease-in-out;
-        }
-        a:hover {
-            color:$rouge;
-        }       
-    }
-    .details {
-        color: #c2c2c2;
-        font-size: 12px;
-    }
+}
 
+.headline-title {
+    font-family: 'Barlow';
+    font-size: 40px;
+    font-weight: 800;
+     a {
+        color: #fff;
+        transition: .4s all ease-in-out;
+    }
+    a:hover {
+        color:$rouge;
+    }       
+}
+.details {
+    color: #c2c2c2;
+    font-size: 12px;
 }
 
 
@@ -86,7 +86,7 @@ main {
 }
 
 .top .text .headline-title, .bottom .text .headline-title {
-        font-size: 24px;
+    font-size: 24px;
 }
 
 .top .text .sticker {
@@ -118,6 +118,8 @@ hr {
         color: $bleu;
         line-height: 2rem;
     }
+    .vert { color: $vert}
+    .rouge { color : $rouge}
 }
 
 .whatsnew {
@@ -170,6 +172,9 @@ hr {
 
 .flex-right {
     width :calc(100% - 770px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .entete {
@@ -197,6 +202,7 @@ hr {
     display: flex;
     flex-direction: column;
     margin-left:20px;
+    overflow: hidden;
     img {
         width: 320px;
     }
@@ -226,14 +232,73 @@ hr {
     gap:20px
 }
 
+.mostrecent {
+    h3 {
+        margin-top:0;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    article {
+        position:relative
+    }
+
+    article::before{
+        content: "";
+        background: linear-gradient(0deg, rgba(9,121,82,0.3337710084033614) 0%, rgb(0, 0, 0) 0%, rgba(210,1,103,0) 100%, rgba(244,1,120,0.13489145658263302) 100%, rgba(255,255,255,0) 100%);
+        height:50%;
+        width:100%;
+        position:absolute;
+        top: 50%;
+        left:0;
+        border-radius: 10px;
+    }
+
+    .text {
+        position: absolute;
+        top:40%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .headline-title {
+        font-size: 16px;
+    }
+
+    .sticker {
+        background-color: $mauve;
+    }
+
+    .recent-flex {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .caption {
+        line-height: 1.3rem;
+    }
+}
+
+
+
 // partie trois
 
 .most-popular {
     padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     gap:30px;
     justify-content: center;
     align-items: center;
+    h3 {
+        margin-top:0
+    }
     .pub {
         width: 265px;
         margin:0;
@@ -245,6 +310,94 @@ hr {
         width: calc(100% - 265px);
         height: 355px;
     }
+
+    .caption p {
+        max-width: 245px;
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+        margin:15px 0;
+    }
+
+    .popular-slider {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+// partie 4
+
+.trending {
+    padding:100px 0 ;
+    h2 {
+        margin:0;
+        display: block;
+        font-size: 40px;
+        color: #051441;
+        font-weight: 700;
+        padding-bottom:20px;
+    }
+
+    .trending-slider {
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+
+        > * {
+            width:33%;
+        }
+
+        img {
+            min-width:100%;
+            display: block;
+            border-radius: 5px;
+        }
+    }
+
+    article {
+        position: relative;
+    }
+
+    .img-caption {
+        position: absolute;
+        bottom:0;
+        left:0;
+        background-color:#fff;
+        padding:20px;
+        width:80%;
+        border-radius: 5px;
+    }
+
+    h3 a {
+        color: #000;
+        font-family: "barlow";
+        font-size: 18px;
+
+        
+    }
+    h3 a:hover  {
+        color:$rouge;
+    }
+
+    .date {
+        font-size: 11px;
+        font-weight: 600;
+        color:rgb(66, 66, 66)
+    }
+
+    i {
+        position: absolute;
+        right:20px;
+        bottom: 10px;
+        font-size: 30px;
+        cursor:pointer;
+    }
+}
+
+.end-pub {
+    display: block;
+    margin : 0 auto;
+    padding-bottom:100px;
 }
 
 
